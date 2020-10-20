@@ -1,0 +1,301 @@
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#contenedor{
+    height: auto;
+    margin: auto;
+    padding-left: 10px;  
+    font-family: sans-serif;  
+}
+
+header{
+    height: 55px;
+    background: #E22C04;
+    border-radius: 24px;
+    margin: 5px;
+    padding: 5px;
+}
+
+header nav ul li span{
+    margin-right: 10px;
+}
+
+#btn-menu{
+    display: none;
+}
+
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    padding: 5px;  
+    overflow: hidden;
+    /* flex-wrap: wrap; */
+}
+
+header label img{
+    color: #fff;
+    padding: 50px;
+    margin: 100px;
+}
+
+header label:hover{
+    cursor: pointer;
+}
+
+.menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: flex-end; */
+}
+
+.menu li:hover{
+    background: #41669e;
+    border-radius: 20px;
+}
+
+.menu li a{
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.menu li{
+    flex-grow: 1;
+    /* border-right: 1px solid rgb(0, 0, 0); */
+}
+
+#contenido{
+    display: flex;
+    height: auto;
+    width: 100%;
+    border-radius: 20px;
+    justify-content: center;
+    justify-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+#section{
+    display: block;
+    height: auto;
+    width: 70%;
+    background: #ffff;
+    border-radius: 8px;
+    margin: 5px;
+    float: left;
+}
+
+#section .carousel-inner{
+    border-radius: 20px;            
+}
+
+.section-oferta{
+    display: block;
+    float: left;
+}
+
+.oferta-contenido{
+    display: flex;
+}
+
+.oferta-contenido .card{
+    display: block;
+}
+
+.oferta-info{
+    display: flex;
+    align-items: center;
+}
+
+.oferta{
+    display: block;
+    text-align: center;
+    align-items: center; 
+    border-radius: 100%;
+}
+
+.oferta h2{
+    font-size: 18px;
+}
+
+.oferta img{
+    object-fit: cover;
+    width: 280px;
+    height: 280px;
+    vertical-align: top;
+    transform: scale(1);
+    transition: transform .6s;
+    margin: 20px;
+    padding: 20px;   
+}
+
+.oferta img:hover{
+    padding: 30px;
+    transform: scale(1.7);
+}
+
+#aside{
+    height: auto;
+    width: 30%;
+    background: #ffff;
+    border-radius: 20px;
+    margin: 5px;
+    overflow: hidden;
+    /* padding: 50px; */
+    text-align: center;
+    /* float: right; */
+    padding-left: 50px;
+}
+
+#aside .card{
+    display: block;   
+}
+
+@media (max-width:900px) {
+    header{
+        color: #fff;
+    }
+
+    header label{
+        display: inline-block;
+        border-right: 1px solid #fff;
+        padding: 5px;
+    }
+
+    .menu{
+        position: absolute;
+        background: #E22C04;
+        width: 450px;
+        margin-left: -100%;
+        transition: all 0.5s;
+        display: flex;
+        border-radius: 25px;
+        z-index: 999;
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .menu li{
+        border-top: 1px solid #fff;
+        border-radius: 5px;
+        width: 400px;
+    }
+
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+    }
+
+    #contenido{
+        height: auto;
+        width: 100%;
+        border-radius: 8px;
+        display: inline-block; 
+        overflow: hidden;
+        text-align: center;
+    }
+
+    #section{
+        display: inline-block;
+        width: 100%;
+    }
+
+    .oferta-info{
+        display: inline-block;
+        align-items: center;
+        border-radius: 10px;
+    }
+
+    .oferta-contenido{
+        display: block;
+    }
+
+    .carousel-inner{
+        height: 300px;
+        padding: 30px;
+    }
+
+    .carousel-caption{
+        display: block;
+        height: 70px;
+        justify-content: space-around;
+    }
+
+    .carousel-caption h5{
+        font-size: 10px;
+        padding-top: 20px;
+        justify-content: space-around;       
+    }
+
+    .carousel-caption p{
+        font-size: 10px;
+        height: 400px;
+        justify-content: space-around;
+    } 
+
+    #aside{
+        display: inline-block;  
+        width: 100%;  
+    }
+
+    #aside .card{
+        display: block;
+    }
+}
+
+#footer{
+    height: 340px;
+    background: #E22C04;
+    border-radius: 8px; 
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+    bottom: 0;   
+    width: 100%;
+    height: auto;
+}
+
+footer h3{
+    color: #fff;
+    font-size: 30px;   
+}
+
+footer p{
+    margin-bottom: 10px;
+    font-size: italic;
+    color: #fff;
+}
+
+footer i{
+    font-size: 20px;
+    color: #fff;
+
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+footer img{
+    width: 200px;
+    cursor: pointer;
+    padding-bottom: 40px;
+}
+
+.footer-contact img{
+    display: block;    
+    justify-content: center;
+}

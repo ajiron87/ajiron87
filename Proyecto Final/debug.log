@@ -1,0 +1,9 @@
+[1013/195600.648:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Alvaro Jiron\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\11fae3d1-9039-4ecb-a404-519500052a3f: El sistema no puede encontrar la ruta especificada. (0x3)
+[1013/195600.742:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Alvaro Jiron\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\d66d8677-e09d-478a-accb-5d6bad1bf622: El sistema no puede encontrar la ruta especificada. (0x3)
+[1013/195600.742:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[1014/190825.638:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[1014/230451.685:ERROR:file_io.cc(90)] ReadExactly: expected 36, observed 0
+[1015/014026.597:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[1016/182753.233:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[1016/233057.426:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
+[1017/044019.993:ERROR:directory_reader_win.cc(43)] FindFirstFile: El sistema no puede encontrar la ruta especificada. (0x3)
